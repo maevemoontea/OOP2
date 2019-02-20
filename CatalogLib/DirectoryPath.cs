@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CatalogLib
 {
-    abstract class DirectoryPath
+    public abstract class DirectoryPath
     {
         private protected string name;
         private protected string lookupPath;

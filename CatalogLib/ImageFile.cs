@@ -1,12 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace CatalogLib
 {
-    class ImageFile
+    public class ImageFile : DirectoryPath
     {
+        public override void Paste()
+        {
+
+        }
+
+        public ImageFile(string lookup, string result, string imageName, string extention)
+        : base(lookup, result)
+        {
+            name = imageName;
+        }
     }
 }

@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramTests.cs" />
+    <Compile Include="FolderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,10 +63,6 @@
     <ProjectReference Include="..\GlcmLib\GlcmLib.csproj">
       <Project>{9d0a27fb-247a-42c5-8a5b-943151cccb0b}</Project>
       <Name>GlcmLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OOP2\OOP2.csproj">
-      <Project>{fe21c957-4178-4bd9-8c67-e6f3689025fc}</Project>
-      <Name>OOP2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
