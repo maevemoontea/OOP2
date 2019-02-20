@@ -36,11 +36,11 @@ namespace OOP2
         static void TakeData()
         {
             string path = "";
-            Console.WriteLine("Set path for directory where you need looking for. For example \n D:\\some_folder \n");
+            Console.WriteLine("Вкажіть директорію, в якій шукати зображення для обробки. Наприклад: \n D:\\some_folder \n");
             path = Console.ReadLine();
             baseDirPath = SetDirectory(path);
 
-            Console.WriteLine("Set path for directory to place results \n");
+            Console.WriteLine("Вкажіть директорію, в яку розмістити результат: \n");
             path = Console.ReadLine();
             resultDirPath = SetDirectory(path);
         }
@@ -53,7 +53,7 @@ namespace OOP2
             }
             else
             {
-                Console.WriteLine("Set another path. This directory doesn't exist!");
+                Console.WriteLine("Вкажіть іншу директорію. Вказана не існує!");
                 path = Console.ReadLine();
                 return SetDirectory(path);
             }

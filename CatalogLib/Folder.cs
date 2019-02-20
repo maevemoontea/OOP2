@@ -1,12 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace CatalogLib
 {
-    class Folder
+    class Folder : DirectoryPath
     {
+        public override void Paste()
+        {
+            DirectoryInfo dir = new DirectoryInfo(resultPath);
+            if (dir.Exists)
+            {
+                dir.CreateSubdirectory(name);
+            }
+            // what if such path doesn't exist?
+        }
+
+        public Folder(string lookup, string result, string folderName)
+            : base(lookup, result)
+        {
+            name = folderName;
+        }
     }
 }
