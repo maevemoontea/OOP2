@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FolderTests.cs" />
+    <Compile Include="GlcmBmpTests.cs" />
+    <Compile Include="ImageFileTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
