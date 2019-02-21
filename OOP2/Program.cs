@@ -2,7 +2,6 @@
 using System.IO;
 using System.Text;
 using CatalogLib;
-using GlcmLib;
 
 
 namespace OOP2

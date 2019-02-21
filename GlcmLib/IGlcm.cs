@@ -18,7 +18,5 @@ namespace GlcmLib
         string ENT();
         // correlation
         string COR();
-
-
     }
 }

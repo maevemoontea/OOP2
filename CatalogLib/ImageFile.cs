@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.IO;
 using GlcmLib;
 
@@ -15,13 +14,11 @@ namespace CatalogLib
         {
             string fullName = resultPath + "/" + name + ".txt";
             FileInfo imageInfoFile = new FileInfo(fullName);
-           // imageInfoFile.Create();
             // what if such path does exist?
             string parameters = GetGlcmParametrs();
             using (FileStream fs = new FileStream(fullName, FileMode.OpenOrCreate))
             {
                 byte[] input = Encoding.Default.GetBytes(parameters);
-                // запись массива байтов в файл
                 fs.Write(input, 0, input.Length);
             }
         }
