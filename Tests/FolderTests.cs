@@ -22,19 +22,6 @@ namespace OOP2Tests
         }
 
         [Test]
-        public void SetImages_isWorking()
-        {
-            string lookup = "D:\\oop2lab/images";
-            string result = "D:\\oop2lab";
-            string name = "execution_folder";
-
-            Folder testFolder = new Folder(lookup, result, name);
-            testFolder.SetImages();
-
-            Assert.That(testFolder.testString, Is.EqualTo("1"));
-        }
-
-        [Test]
         public void SetImages_onMyFolder_filledChildImages()
         {
             string lookup = "D:\\oop2lab/images";

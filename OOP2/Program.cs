@@ -16,7 +16,7 @@ namespace OOP2
         {
             Console.OutputEncoding = Encoding.UTF8;
             SayHello();
-            TakeData();
+            TakeDataAndRun();
             SayGoodbay();
         }
         static void SayHello()
@@ -35,16 +35,22 @@ namespace OOP2
             Console.BackgroundColor = default;
             Console.ForegroundColor = ConsoleColor.Gray;
         }
-        static void TakeData()
+        static void TakeDataAndRun()
         {
             string path = "";
             Console.WriteLine("Вкажіть директорію, в якій шукати зображення для обробки. Наприклад: \n D:\\some_folder \n");
             path = Console.ReadLine();
             baseDirPath = SetDirectory(path);
 
-            Console.WriteLine("Вкажіть директорію, в яку розмістити результат: \n");
+            Console.WriteLine("\nВкажіть директорію, в яку розмістити результат: \n");
             path = Console.ReadLine();
             resultDirPath = SetDirectory(path);
+
+            string name = "OOP2_execution_folder";
+
+            Folder testFolder = new Folder(baseDirPath, resultDirPath, name);
+            testFolder.RunExecution();
+
         }
         static string SetDirectory(string path)
         {
