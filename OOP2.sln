@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogLib", "CatalogLib\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlcmLib", "GlcmLib\GlcmLib.csproj", "{9D0A27FB-247A-42C5-8A5B-943151CCCB0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{38C5FAA9-5026-4B1E-9731-F0ECAD190164}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP2Tests", "Tests\OOP2Tests.csproj", "{38C5FAA9-5026-4B1E-9731-F0ECAD190164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

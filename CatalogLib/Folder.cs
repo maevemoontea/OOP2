@@ -6,21 +6,33 @@ namespace CatalogLib
 {
     public class Folder : DirectoryPath
     {
-        private List<DirectoryPath> childImages;
+        private List<ImageFile> childImages = new List<ImageFile>();
+        public string ChildImages {
+            get {
+                string namesOfImages = "";
+                foreach (DirectoryPath image in childImages)
+                {
+                    namesOfImages += image.Name + " ";
+                }
+                return namesOfImages;
+            }
+        }
         private string mirrorDir;
+        public string testString = "";
 
         public void SetImages()
         {
+            testString = "1";
 
             string[] files = Directory.GetFiles(lookupPath);
             foreach (string s in files)
             {
                 FileInfo file = new FileInfo(s);
-                if (file.Extension == "bmp")
+                if (file.Extension == ".bmp")
                 {
                     string imageName = file.Name;
                     ImageFile image = new ImageFile(s, mirrorDir, imageName, "bmp");
-                    childImages.Add(image);
+                    childImages.Add(item: image);
                 }
             }
         }
